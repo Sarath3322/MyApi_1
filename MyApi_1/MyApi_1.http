@@ -1,4 +1,4 @@
-@MyApi_1_HostAddress = http://localhost:5181
+@MyApi_1_HostAddress =https://myapi-1-fyzx.onrender.com
 
 GET {{MyApi_1_HostAddress}}/weatherforecast/
 Accept: application/json

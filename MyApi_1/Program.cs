@@ -51,7 +51,7 @@ builder.Services.AddSwaggerGen(c =>
 
 
 
-builder.Services.AddDbContext<DBCONTEXT>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("WebApi_LocalDb_1")));
+builder.Services.AddDbContext<DBCONTEXT>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("WebApi_LocalDb_1")));
 
 var app = builder.Build();
 

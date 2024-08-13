@@ -56,8 +56,8 @@ builder.Services.AddDbContext<DBCONTEXT>(opt => opt.UseNpgsql(builder.Configurat
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
+if (app.Environment.IsDevelopment())
+{
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
